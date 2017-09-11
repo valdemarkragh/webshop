@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  	text-align:center;
+ 	 background: url(images/brady-bellini-191086.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+button {
+    background-color: white; 
+    border: 1px;
+	border-color: black;
+	border-style: solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-left: 2px;
+	margin-bottom: 2px; 	   
+}
+
+button {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: black; 
+    color: white;
+}
+
+.container {
+	background:rgba(255,255,255, 0.80);
+    width: 50%;
+    margin-left: 25%;  
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+h2 {
+	text-align:center;
+}
+
+table {
+	width:20%;
+	text-align:center;
+	float:left;
+	margin-top:25px;
+	margin-left: 5.5%;
+	background:rgba(255,255,255, 0.80);
+	
+	
+}
+th {
+	text-align:center;
+}
+
+h2 {
+	text-decoration:underline;	
+}
+
+.cart {
+	width: 20%;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 50%;
+    text-align: center;
+	background:rgba(255,255,255, 0.80);
+	border-width: 1px;
+	border-style: solid;
+	border-color:black;
+	
+}
+
+
+.cartbuttons {
+	width: 20%;
+    display:inline;
+	
+}
+
+.cartvariety {
+	padding:2px;
+}
+
+button {
+	cursor:pointer;
+}
+
+input {
+	width: 3%;
+}
+
+
+
