@@ -6,7 +6,7 @@
 
 const HOSTNAME = 'mysql9.gigahost.dk'; // server
 const MYSQLUSER = 'ftk'; // superbruger
-const MYSQLPASS = 'bprffoov'; // password
+const MYSQLPASS = '***'; // password
 const MYSQLDB = 'ftk_webshop1'; // database navn 
 
 
