@@ -75,7 +75,8 @@ if(filter_input(INPUT_GET, 'update')) {
 		$quantity = 'quantity' . $_GET['id'];
 		$_SESSION['cart'][$_GET['id']]['quantity'] = $_POST[$quantity];
 };
-	
+
+
     
     foreach ($_SESSION['cart'] as $val){
 			$id = $val['id'];
@@ -91,7 +92,13 @@ if(filter_input(INPUT_GET, 'update')) {
 			echo '<br />'  . $name . ' Antal: ' . '<input name="quantity' . $id . '" type="text" value="' . $val['quantity'] . '"/>';
 			echo '<button name="update" type="submit" value="update">Opdater</button>';
 			echo '<a href="cart.php?id='.$id.'&delete=yes"><button name="Delete" type="button" value="delete">Fjern</button></a>';
+			echo ' Pris:';
+			$sum_total =  $price * $val ['quantity'];
+			echo $sum_total;
+			echo '<br />';
+			echo '<br />';
 			echo '</form>';
+			
 	}	
 ?>
 <?php 
@@ -100,16 +107,7 @@ if(filter_input(INPUT_GET, 'update')) {
 	if (empty($price)) $price =''; 
 	if (empty($val['quantity'])) $val['quantity'] ='';  
 ?>
-<?php 
-	$sum_total =  $price * $val ['quantity'];
-	
-	
-	echo '<br />';
-	echo 'Total:';
-	echo $sum_total;
-	echo '<br /><br />';
-	
-	?>
+
 
  
 <a href="cart.php?new_order=yes"><button name="submit" id="indsend" value="indsend">Send ordre</button></a>
