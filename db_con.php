@@ -4,16 +4,11 @@
 
 // 1. variabler (konstanter) til forbindelsen
 
-const HOSTNAME = 'mysql9.gigahost.dk'; // server
-const MYSQLUSER = 'ftk'; // superbruger
-const MYSQLPASS = '***'; // password
-const MYSQLDB = 'ftk_webshop1'; // database navn 
 
-
-/* const HOSTNAME = 'localhost'; // server
+const HOSTNAME = 'localhost'; // server
 const MYSQLUSER = 'root'; // superbruger
 const MYSQLPASS = 'root'; // password
-const MYSQLDB = 'webshop1'; // database navn */
+const MYSQLDB = 'webshop1'; // database navn 
 
 // 2. Forbindelsen via mysqli metoden
 
